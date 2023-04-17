@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'image/clglogo.jpg'%}" type = "image/x-icon">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <img src="{% static 'image/clglogo.jpg'%}" alt="collage Logo" srcset="" width="50px" height="50px">
+        <h4>Dr.YC JAMES YEN GOVERNMENT POLYTECHNIC</h4>
+          <span></span>
+      </div>
+    </nav>
+
+<div class="alert alert-info" role="alert" style="margin: 50px;">
+    <div class="text-center"> <h3>Student Details</h3></div>
+</div>
+  <div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-8 col-sn-8 col-md-8 m-auto">
+                <table class="table table table-hover table-sm table-bordered">
+                  <thead>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Pin Number</th>
+                      <td>{{object.pin_number}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">First Name</th>
+                      <td>{{object.first_name}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Last Name</th>
+                      <td>{{object.last_name}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Branch</th>
+                      <td>{{object.branch}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Year</th>
+                      <td>{{object.year}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">101-UT1</th>
+                      <td>{{object.first_year_101_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">102-UT1</th>
+                      <td>{{object.first_year_102_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">103-UT1</th>
+                      <td>{{object.first_year_103_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">104-UT1</th>
+                      <td>{{object.first_year_104_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">105-UT1</th>
+                      <td>{{object.first_year_105_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">106-UT1</th>
+                      <td>{{object.first_year_106_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">101-UT2</th>
+                      <td>{{object.first_year_101_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">102-UT2</th>
+                      <td>{{object.first_year_102_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">103-UT2</th>
+                      <td>{{object.first_year_103_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">104-UT2</th>
+                      <td>{{object.first_year_104_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">105-UT2</th>
+                      <td>{{object.first_year_105_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">106-UT2</th>
+                      <td>{{object.first_year_106_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">107-P</th>
+                      <td>{{object.first_year_107_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">108-P</th>
+                      <td>{{object.first_year_108_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">109-P</th>
+                      <td>{{object.first_year_109_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">110-P</th>
+                      <td>{{object.first_year_110_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">101-F</th>
+                      <td>{{object.first_year_101_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">102-F</th>
+                      <td>{{object.first_year_102_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">103-F</th>
+                      <td>{{object.first_year_103_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">104-F</th>
+                      <td>{{object.first_year_104_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">105-F</th>
+                      <td>{{object.first_year_105_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">106-F</th>
+                      <td>{{object.first_year_106_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">107-F</th>
+                      <td>{{object.first_year_107_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">108-F</th>
+                      <td>{{object.first_year_108_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">109-F</th>
+                      <td>{{object.first_year_109_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">110-F</th>
+                      <td>{{object.first_year_110_F}}</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <th scope="row">301-UT1</th>
+                      <td>{{object.second_year_301_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">302-UT1</th>
+                      <td>{{object.second_year_302_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">303-UT1</th>
+                      <td>{{object.second_year_303_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">304-UT1</th>
+                      <td>{{object.second_year_304_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">305-UT1</th>
+                      <td>{{object.second_year_305_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">301-UT2</th>
+                      <td>{{object.second_year_301_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">302-UT2</th>
+                      <td>{{object.second_year_302_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">303-UT2</th>
+                      <td>{{object.second_year_303_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">304-UT2</th>
+                      <td>{{object.second_year_304_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">305-UT2</th>
+                      <td>{{object.second_year_305_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">306-P</th>
+                      <td>{{object.second_year_306_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">307-P</th>
+                      <td>{{object.second_year_307_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">308-P</th>
+                      <td>{{object.second_year_308_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">309-P</th>
+                      <td>{{object.second_year_309_P}}</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">301-F</th>
+                      <td>{{object.second_year_301_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">302-F</th>
+                      <td>{{object.second_year_302_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">303-F</th>
+                      <td>{{object.second_year_303_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">304-F</th>
+                      <td>{{object.second_year_304_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">305-F</th>
+                      <td>{{object.second_year_305_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">306-F</th>
+                      <td>{{object.second_year_306_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">307-F</th>
+                      <td>{{object.second_year_307_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">308-F</th>
+                      <td>{{object.second_year_308_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">309-P</th>
+                      <td>{{object.second_year_309_F}}</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <th scope="row">401-UT1</th>
+                      <td>{{object.second_year_401_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">402-UT1</th>
+                      <td>{{object.second_year_402_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">403-UT1</th>
+                      <td>{{object.second_year_403_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">404-UT1</th>
+                      <td>{{object.second_year_404_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">405-UT1</th>
+                      <td>{{object.second_year_405_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">401-UT2</th>
+                      <td>{{object.second_year_401_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">402-UT2</th>
+                      <td>{{object.second_year_402_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">403-UT2</th>
+                      <td>{{object.second_year_403_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">404-UT2</th>
+                      <td>{{object.second_year_404_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">405-UT2</th>
+                      <td>{{object.second_year_405_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">406-P</th>
+                      <td>{{object.second_year_406_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">407-P</th>
+                      <td>{{object.second_year_407_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">408-P</th>
+                      <td>{{object.second_year_408_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">409-P</th>
+                      <td>{{object.second_year_409_P}}</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">401-F</th>
+                      <td>{{object.second_year_401_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">402-F</th>
+                      <td>{{object.second_year_402_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">403-F</th>
+                      <td>{{object.second_year_403_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">404-F</th>
+                      <td>{{object.second_year_404_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">405-F</th>
+                      <td>{{object.second_year_405_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">406-F</th>
+                      <td>{{object.second_year_406_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">407-F</th>
+                      <td>{{object.second_year_407_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">408-F</th>
+                      <td>{{object.second_year_408_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">409-P</th>
+                      <td>{{object.second_year_409_F}}</td>
+                    </tr>
+
+
+
+
+
+                    <tr>
+                      <th scope="row">501-UT1</th>
+                      <td>{{object.third_year_501_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502-UT1</th>
+                      <td>{{object.third_year_502_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">503-UT1</th>
+                      <td>{{object.third_year_503_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">504-UT1</th>
+                      <td>{{object.third_year_504_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">505-UT1</th>
+                      <td>{{object.third_year_505_UT1}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">501-UT2</th>
+                      <td>{{object.third_year_501_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502-UT2</th>
+                      <td>{{object.third_year_502_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">503-UT2</th>
+                      <td>{{object.third_year_503_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">504-UT2</th>
+                      <td>{{object.third_year_504_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">505-UT2</th>
+                      <td>{{object.third_year_505_UT2}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">506-P</th>
+                      <td>{{object.third_year_506_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">507-P</th>
+                      <td>{{object.third_year_507_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">508-P</th>
+                      <td>{{object.third_year_508_P}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">509-P</th>
+                      <td>{{object.third_year_509_P}}</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">501-F</th>
+                      <td>{{object.third_year_501_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502-F</th>
+                      <td>{{object.third_year_502_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">503-F</th>
+                      <td>{{object.third_year_503_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">504-F</th>
+                      <td>{{object.third_year_504_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">505-F</th>
+                      <td>{{object.third_year_505_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">506-F</th>
+                      <td>{{object.third_year_506_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">507-F</th>
+                      <td>{{object.third_year_507_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">508-F</th>
+                      <td>{{object.third_year_508_F}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">509-F</th>
+                      <td>{{object.third_year_509_F}}</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <th scope="row">601-F</th>
+                      <td>{{object.third_year_601_F}}</td>
+                    </tr>
+
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+       </div>
+    </div>
+</body> 

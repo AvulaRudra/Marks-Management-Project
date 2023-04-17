@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Student Registration</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'image/clglogo.jpg'%}" type = "image/x-icon">
+    <style>
+        .errorlist{
+            list-style-type: none;
+            color: red;
+            font-size: 15Px;
+        }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <img src="{% static 'image/clglogo.jpg'%}" alt="collage Logo" srcset="" width="50px" height="50px">
+        <h4>Dr.YC JAMES YEN GOVERNMENT POLYTECHNIC</h4>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Marks Management</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/marks/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/marks/student">Student Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/marks/allstudentdetails">All Students</a>
+              </li>
+             
+            </ul>
+            <br>
+              <a class="btn btn-outline-dange" href="{% url 'logout' %}">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="alert alert-info" role="alert" style="margin: 50px;">
+        <div class="text-center"> <h3>Student Registration</h3></div>
+    </div>
+    <section>
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-12 col-sn-8 col-md-6 m-auto">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <form action="" method="post" novalidate>
+                                <div class="text-center mt-3">
+                                    {% csrf_token %}
+                                    {{form.as_p}} 
+                                    <button class="btn btn-primary">Submit</button>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

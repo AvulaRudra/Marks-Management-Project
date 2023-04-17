@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'image/clglogo.jpg'%}" type = "image/x-icon">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <img src="{% static 'image/clglogo.jpg'%}" alt="collage Logo" srcset="" width="50px" height="50px">
+        <h4>Dr.YC JAMES YEN GOVERNMENT POLYTECHNIC</h4>
+          <span></span>
+      </div>
+    </nav>
+
+    <div class="alert alert-primary" role="alert" style="margin: 50px;">
+      <div class="text-center"> <h3>Check Details</h3></div>
+    </div>
+    <div class="container mt-5 pt-5">
+      <div class="row">
+          <div class="col-12 col-sn-8 col-md-6 m-auto">
+              <div class="card border-0 shadow">
+                  <div class="card-body">
+                        <form class="" role="search">
+                          <h3>Search Pin Number</h3>
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="pin"><br>
+                          <div class="text-center">
+                          <button class="btn btn-outline-success btn-mg" type="submit">Search</button>
+                        </div>
+                        </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+   
+    {% if 'pin' in request.GET %}
+    <div class="text-center" style="margin: 5%;">
+
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Pin Number</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+           
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for data in data %}
+          <tr>
+            <th scope="row">{{ data.pin_number }}</th>
+            <td>{{ data.first_name }}</td>
+            <td>{{ data.last_name }}</td>
+            
+            <td><a href="{% url 'checkdetail' data.pin_number%}" class="btn btn-outline-success">View</a></td>
+          </tr>
+        </tbody>
+        {%endfor%}
+      </table>
+    </div>
+    {%endif%}
+  </body>
+</html>
